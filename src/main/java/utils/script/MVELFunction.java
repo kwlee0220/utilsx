@@ -1,4 +1,4 @@
-package utilsx.script;
+package utils.script;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

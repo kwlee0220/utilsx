@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import utils.io.IOUtils;
-import utilsx.io.Lz4Compressions;
+import utils.io.Lz4Compressions;
 
 
 /**

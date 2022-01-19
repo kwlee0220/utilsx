@@ -1,4 +1,4 @@
-package utilsx.script;
+package utils.script;
 
 import java.io.Serializable;
 import java.lang.reflect.Method;
@@ -11,7 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import utils.Utilities;
-import utilsx.script.MVELScript.ImportClass;
+import utils.script.MVELScript.ImportClass;
 
 
 /**

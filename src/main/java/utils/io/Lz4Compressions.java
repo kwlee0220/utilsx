@@ -1,4 +1,4 @@
-package utilsx.io;
+package utils.io;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

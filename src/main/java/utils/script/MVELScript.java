@@ -1,4 +1,4 @@
-package utilsx.script;
+package utils.script;
 
 import java.util.Collections;
 import java.util.List;
