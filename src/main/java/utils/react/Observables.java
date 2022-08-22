@@ -7,12 +7,13 @@ import java.util.concurrent.CancellationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.reactivex.Completable;
-import io.reactivex.Observable;
 import utils.async.Execution;
 import utils.async.ExecutionProgress;
-import utils.func.Unchecked;
+import utils.func.UncheckedConsumer;
 import utils.stream.FStream;
+
+import io.reactivex.Completable;
+import io.reactivex.Observable;
 
 /**
  * 
@@ -29,7 +30,7 @@ public class Observables {
 		return Observable.create(emitter -> {
 			try {
 				stream.takeWhile(v -> !emitter.isDisposed())
-						.forEach(Unchecked.ignore(emitter::onNext));
+						.forEach(UncheckedConsumer.ignore(emitter::onNext));
 				if ( !emitter.isDisposed() ) {
 					emitter.onComplete();
 				}
