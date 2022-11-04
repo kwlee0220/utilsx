@@ -8,6 +8,8 @@ targetCompatibility = JavaVersion.VERSION_1_8
 [compileJava,compileTestJava]*.options*.encoding = 'UTF-8'
 
 ext {
+	slf4j_version = '1.7.32'
+	guava_version = '30.1.1-jre'
 	lz4_java_version = '1.7.1'
 	commons_cli_version = '1.4'
 	mvel2_version = '2.4.14.Final'
@@ -21,6 +23,7 @@ ext {
 
 repositories {
     mavenCentral()
+	jcenter()
 }
 
 dependencies {
