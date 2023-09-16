@@ -99,7 +99,7 @@ public interface ConfigNode {
 		
 		Object obj = getValue();
 		if ( obj instanceof String ) {
-			return UnitUtils.parseDuration((String)obj);
+			return UnitUtils.parseDurationMillis((String)obj);
 		}
 		else if ( obj instanceof Number ) {
 			return ((Number)obj).longValue();
@@ -109,7 +109,7 @@ public interface ConfigNode {
 		}
 	}
 	public default long asDuration(String defValue) {
-		return isMissing() ? UnitUtils.parseDuration(defValue) : asDuration();
+		return isMissing() ? UnitUtils.parseDurationMillis(defValue) : asDuration();
 	}
 	public default long asDuration(long defMillis) {
 		return isMissing() ? defMillis : asDuration();
