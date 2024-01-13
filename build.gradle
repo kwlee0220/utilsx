@@ -27,7 +27,7 @@ repositories {
 }
 
 dependencies {
-	api project(":utils")
+	implementation project(":utils")
 	
 	implementation "org.lz4:lz4-java:${lz4_java_version}"
 	implementation "commons-cli:commons-cli:${commons_cli_version}"
