@@ -1,7 +1,4 @@
 rootProject.name = 'utilsx'
 
-ext.common_dir = '..'
-['utils'].each {
-	include ":$it"
-	project(":$it").projectDir = file("${common_dir}/$it")
-}
+include ':utils'
+project(':utils').projectDir = file('../../common/utils')

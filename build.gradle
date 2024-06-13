@@ -6,8 +6,8 @@ plugins {
 group = 'etri'
 version = '24.01.12'
 
-sourceCompatibility = '17'
-targetCompatibility = '11'
+sourceCompatibility = '11'
+targetCompatibility = JavaVersion.VERSION_1_8
 [compileJava,compileTestJava]*.options*.encoding = 'UTF-8'
 
 ext {
@@ -33,6 +33,9 @@ dependencies {
 
 	// Logback with SLF4j
 	implementation "ch.qos.logback:logback-classic:${logback_version}"
+	
+	// Guava
+	implementation "com.google.guava:guava:${guava_version}"
 	
 	implementation "org.lz4:lz4-java:${lz4_java_version}"
 	implementation "commons-cli:commons-cli:${commons_cli_version}"
