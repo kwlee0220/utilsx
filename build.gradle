@@ -14,7 +14,7 @@ java {
 
 ext {
 	logback_version = '1.3.14'
-	guava_version = '30.1.1-jre'
+	guava_version = '33.4.8-jre'
 	lz4_java_version = '1.7.1'
 	commons_cli_version = '1.4'
 	mvel2_version = '2.4.14.Final'
